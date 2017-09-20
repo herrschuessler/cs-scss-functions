@@ -6,7 +6,7 @@
 // @return [string] the breakpoint value
 @function br($dimension, $breakpoint, $breakpoints: $breakpoints) {
   @if (map-has-key($breakpoints, $breakpoint) and map-has-key(map-get($breakpoints, $breakpoint), $dimension)) {
-    @return $dimension '(#{map-get(map-get($breakpoints, $breakpoint),$dimension)})';
+    @return $dimension map-get(map-get($breakpoints, $breakpoint),$dimension);
   }
   @else {
     @warn 'Map key/value not found';
