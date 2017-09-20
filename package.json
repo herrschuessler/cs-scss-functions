@@ -1,6 +1,6 @@
 {
   "name": "cs-scss-functions",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "My common SCSS functions",
   "engines": {
     "node": "6.10.0",
