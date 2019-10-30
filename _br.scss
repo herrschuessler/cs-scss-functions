@@ -4,7 +4,7 @@
 // @param [string] $breakpoint: the map key
 // ---
 // @return [string] the breakpoint value
-@function br($dimension, $breakpoint, $breakpoints: $breakpoints) {
+@function br($dimension, $breakpoint, $breakpoints) {
   @if (map-has-key($breakpoints, $breakpoint) and map-has-key(map-get($breakpoints, $breakpoint), $dimension)) {
     @return $dimension map-get(map-get($breakpoints, $breakpoint),$dimension);
   }
